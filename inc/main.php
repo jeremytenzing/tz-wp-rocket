@@ -36,6 +36,10 @@ function rocket_init() {
 		return;
 	}
 
+	if(is_user_logged_in()) {
+		return;
+	}
+
 	// Call defines and functions.
 	require WP_ROCKET_FUNCTIONS_PATH . 'options.php';
 
